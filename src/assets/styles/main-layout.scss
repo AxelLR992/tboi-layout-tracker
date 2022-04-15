@@ -1,0 +1,23 @@
+@import "global";
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  min-height: 100vh;
+
+  div {
+    border-right: 1px solid #9a9a9a;
+
+    h2 {
+      text-align: center;
+      padding: 20px;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

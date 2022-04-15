@@ -1,0 +1,33 @@
+{
+    "author": "Axel León",
+    "description": "This is a JSON structure example",
+    "map": {
+        "size": {
+            "height": 2,
+            "width": 2
+        },
+        "floor": "Downpour I",
+        "content": [
+            {
+                "x": 1,
+                "y": 1,
+                "element": "none"
+            },
+            {
+                "x": 2,
+                "y": 1,
+                "element": "boss-room"
+            },
+            {
+                "x": 1,
+                "y": 2,
+                "element": "none"
+            },
+            {
+                "x": 2,
+                "y": 2,
+                "element": "none"
+            }
+        ]
+    }
+}

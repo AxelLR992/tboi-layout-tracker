@@ -1,0 +1,22 @@
+@import "reset";
+
+@font-face {
+    font-family: bitter-regular;
+    src: url("../fonts/Bitter-Regular.ttf");
+}
+
+@font-face {
+    font-family: bitter-bold;
+    src: url("../fonts/Bitter-Bold.ttf");
+}
+
+*, body {
+    box-sizing: border-box;
+    font-family: bitter-regular;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: bitter-bold;
+}
+
+$primary: #8e50d9;
