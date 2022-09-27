@@ -38,22 +38,10 @@ const MapGrid: FunctionComponent<IMapGridProps> = ({ height, width }) => {
         if ((index + 1) % width === 0)
           return (
             <>
-              <MapGridItem key={index}>
-                <>
-                  {item.x},{item.y}
-                </>
-              </MapGridItem>
-
-              <br />
+              <MapGridItem key={index} /> <br />
             </>
           );
-        return (
-          <MapGridItem key={index}>
-            <>
-              {item.x},{item.y}
-            </>
-          </MapGridItem>
-        );
+        return <MapGridItem key={index} />;
       })}
     </div>
   );

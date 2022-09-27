@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import MainLayout from "../components/atoms/MainLayout";
+import MainLayout from "../components/templates/MainLayout";
 
 export default {
   title: "Atoms/MainLayout",

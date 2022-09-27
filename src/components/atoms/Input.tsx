@@ -2,14 +2,17 @@ import React, { FunctionComponent, useEffect, useRef } from "react";
 import "../../assets/styles/input.scss";
 
 interface InputProps {
-  type: "text" | "number";
+  type?: "text" | "number";
   label?: string;
   placeholder?: string;
   error?: boolean;
-  value: any;
-  onChange: () => void;
+  value?: any;
+  onChange?: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
   multiline?: boolean;
   rows?: number;
+  style?: React.CSSProperties;
 }
 
 const Input: FunctionComponent<InputProps> = ({
@@ -21,6 +24,7 @@ const Input: FunctionComponent<InputProps> = ({
   multiline = false,
   rows = 3,
   onChange,
+  style,
 }) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -37,7 +41,7 @@ const Input: FunctionComponent<InputProps> = ({
   }, [error]);
 
   return (
-    <div className="input">
+    <div className="input" style={style}>
       {label && <label>{label}</label>}
       {multiline ? (
         <textarea
@@ -55,6 +59,7 @@ const Input: FunctionComponent<InputProps> = ({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
+          // onChange={e => {}}
           className="input__default"
         />
       )}

@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from "react";
 import "../../assets/styles/map-grid-item.scss";
 
-interface IMapGridProps {
-  children?: React.ReactElement;
+interface IMapGridItemProps {
+  children?: React.ReactNode;
 }
 
-const MapGrid: FunctionComponent<IMapGridProps> = ({ children }) => {
+const MapGridItem: FunctionComponent<IMapGridItemProps> = ({ children }) => {
   return <div className="map-grid-item">{children}</div>;
 };
 
-export default MapGrid;
+export default MapGridItem;
