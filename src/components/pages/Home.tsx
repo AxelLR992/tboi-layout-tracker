@@ -23,7 +23,15 @@ const Home: FunctionComponent = () => {
       <MainLayout
         elementsContent={<div>Elements</div>}
         gridContent={
-          <MapGrid width={properties.width} height={properties.height} />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: 20
+            }}
+          >
+            <MapGrid width={properties.width} height={properties.height} />
+          </div>
         }
         propertiesContent={<AppProperties />}
       />
