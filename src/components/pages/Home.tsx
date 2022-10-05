@@ -1,7 +1,6 @@
 import React, { FunctionComponent, useState } from "react";
-import ApplicationProperties, {
-  defaultProperties,
-} from "../../utils/applicationProperties";
+import ApplicationProperties from "../../utils/applicationProperties";
+import AppElements from "../organisms/AppElements";
 import AppProperties from "../molecules/AppProperties";
 import MapGrid from "../molecules/MapGrid";
 import MainLayout from "../templates/MainLayout";
@@ -21,13 +20,13 @@ const Home: FunctionComponent = () => {
   return (
     <ApplicationProperties.Provider value={contextValue}>
       <MainLayout
-        elementsContent={<div>Elements</div>}
+        elementsContent={<AppElements />}
         gridContent={
           <div
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: 20
+              marginTop: 20,
             }}
           >
             <MapGrid width={properties.width} height={properties.height} />

@@ -1,4 +1,4 @@
-import react, { FunctionComponent, useContext } from "react";
+import React, { FunctionComponent, useContext } from "react";
 import ApplicationProperties from "../../utils/applicationProperties";
 import Input from "../atoms/Input";
 

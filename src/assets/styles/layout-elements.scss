@@ -1,0 +1,15 @@
+@import "global";
+
+.layout-elements {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  div {
+    button {
+      width: 100%;
+    }
+    button img {
+      width: 100%;
+    }
+  }
+}
