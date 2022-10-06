@@ -37,9 +37,9 @@ const MapGrid: FunctionComponent<IMapGridProps> = ({ height, width }) => {
       {content.map((item, index) => {
         if ((index + 1) % width === 0)
           return (
-            <>
-              <MapGridItem key={index} /> <br />
-            </>
+            <React.Fragment key={index}>
+              <MapGridItem /> <br />
+            </React.Fragment>
           );
         return <MapGridItem key={index} />;
       })}
